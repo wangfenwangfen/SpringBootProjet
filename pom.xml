@@ -51,12 +51,23 @@
         </dependency>
     </dependencies>
 
+    <!--spring boot打包的话需要指定一个唯一的入门-->
     <build>
         <plugins>
             <!-- declaration  3 -->
+           <!--spring-boot-maven-plugin fournit des bibliothèques nécessaires qui soutient votre projet d'être capable d'exécuter directement sans déploiement sur le serveur web -->
+            <!-- this plugin letting you package executable jar or war archives and run an application “in-place”-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <!-- repackage your application -->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
