@@ -8,4 +8,9 @@
     <artifactId>SpringBootProjet</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- declarer packaging type POM, aggregator POM -->
+    <packaging>pom</packaging>
+    <name>projet maven multi modules et SpringBoot</name>
+    <description>Demo project for Spring Boot</description>
+
 </project>
