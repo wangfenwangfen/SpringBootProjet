@@ -11,5 +11,12 @@
 
     <artifactId>dao</artifactId>
 
-
+    <!-- depend du module entity -->
+    <dependencies>
+        <dependency>
+            <groupId>fr.fw</groupId>
+            <artifactId>entity</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>

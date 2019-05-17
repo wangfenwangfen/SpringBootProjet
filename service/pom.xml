@@ -11,5 +11,17 @@
 
     <artifactId>service</artifactId>
 
-
+    <!-- depend du module dao qui depend du entity -->
+    <dependencies>
+        <dependency>
+            <groupId>fr.fw</groupId>
+            <artifactId>entity</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>fr.fw</groupId>
+            <artifactId>dao</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>
