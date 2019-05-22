@@ -14,7 +14,7 @@ public class Room {
     @Column(name = "name", length = 30, nullable = false)
     private String name;
 
-    @Column(name = "image", length = 30, nullable = false)
+    @Column(name = "image", length = 30)
     private String image;
 
     @Column(name = "seatCount", length = 30, nullable = false)
