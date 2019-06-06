@@ -12,7 +12,7 @@
 
     <artifactId>controller</artifactId>
 
-    <!-- depend du module service qui depend du dao qui depend du entity -->
+    <!-- depend du module service qui depend du repository qui depend du entity -->
     <dependencies>
         <dependency>
             <groupId>fr.fw</groupId>
