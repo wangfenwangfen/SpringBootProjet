@@ -60,6 +60,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <!-- Definir la main class de l'application for build  -->
+                <configuration>
+                    <mainClass>application.WebApplication</mainClass>
+                </configuration>
                 <!-- repackage your application -->
                 <executions>
                     <execution>
