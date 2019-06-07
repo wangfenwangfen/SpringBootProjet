@@ -57,7 +57,7 @@
             <!-- declaration  3 -->
            <!--spring-boot-maven-plugin fournit des bibliothèques nécessaires qui soutient votre projet d'être capable d'exécuter directement sans déploiement sur le serveur web -->
             <!-- this plugin letting you package executable jar or war archives and run an application “in-place”-->
-            <plugin>
+           <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <!-- Definir la main class de l'application for build  -->
@@ -70,6 +70,10 @@
                         <goals>
                             <goal>repackage</goal>
                         </goals>
+                        <!--  classifier needed for multi modules springboot projet build -->
+                        <configuration>
+                            <classifier>exec</classifier>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
